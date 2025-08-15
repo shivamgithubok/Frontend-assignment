@@ -1,0 +1,21 @@
+.stats {
+  background-color: #f5f5f5;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 8px;
+}
+
+.stats-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.stat-item {
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .stats-content {
+    flex-direction: column;
+  }
+}

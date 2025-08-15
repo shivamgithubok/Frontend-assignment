@@ -1,0 +1,115 @@
+/* Header main layout */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 32px 18px 24px;
+  background: #fff;
+  border-bottom: 2px solid #e0e0e0;
+  min-height: 70px;
+}
+
+/* Logo and search */
+.logo-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #7c3aed;
+  margin-right: 32px;
+  letter-spacing: 1px;
+}
+.logo-text {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  color: #7c3aed;
+}
+.search-bar {
+  display: flex;
+  align-items: center;
+  background: #f3e8ff;
+  border-radius: 8px;
+  padding: 6px 14px;
+  margin-left: 18px;
+  min-width: 260px;
+}
+.search-icon {
+  color: #7c3aed;
+  font-size: 1.1em;
+  margin-right: 8px;
+}
+.search-input {
+  border: none;
+  background: transparent;
+  outline: none;
+  font-size: 1em;
+  color: #333;
+  width: 160px;
+}
+.header-left{
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+/* Profile and logout */
+.header-right {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 18px;
+  width: max-content
+}
+.profile-info {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    flex-direction: row;
+}
+.header-profile-image {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #f3e8ff;
+}
+.profile-details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.profile-name {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #222;
+}
+.profile-role {
+  font-size: 0.9em;
+  color: #7c3aed;
+  margin-top: -2px;
+}
+.logout-btn {
+  background: #7c3aed;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 20px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.logout-btn:hover {
+  background: #5f27cd;
+}
+
+@media (max-width: 900px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 14px 10px;
+  }
+  .header-right {
+    align-self: flex-end;
+  }
+  .search-bar {
+    min-width: 120px;
+  }
+}
